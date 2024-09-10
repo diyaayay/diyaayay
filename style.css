@@ -1,0 +1,823 @@
+
+@font-face {
+    font-family: "SFReg";
+    src: url(SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+    font-family: "SFBold";
+    src: url(SFPRODISPLAYBOLD.OTF);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SFReg";
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    /* background-color: bisque; */
+    position: relative;
+    z-index: 9998;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+}
+
+.part2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+nav h1{
+    font-size: 50px;
+}
+
+nav h1 i{
+    rotate: 45deg;
+    display: inline-block;
+    font-size: 50px;
+}
+
+nav h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+nav button{
+    padding: 22px 40px;
+    background-color: transparent;
+    font-size: 22px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+nav .part2 h4 a {
+    text-decoration: none;  /* Removes underline */
+    color: black;  /* Keeps the text black */
+}
+
+nav .part2 h4 a:hover {
+    color: black;  /* Ensures the text remains black on hover */
+}
+
+nav .part2 h4 a:visited {
+    color: black;  /* Ensures visited links stay black */
+}
+
+nav .part2 h4 a:focus {
+    outline: none;  /* Removes the focus outline if needed */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.center {
+    padding: 70px 100px;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.center-part-1{
+    height: 100%;
+    width: 50%;
+    /* background-color: #de2727; */
+}
+
+.center-part-2{
+    height: 100%;
+    width: 53%;
+    /* margin-left: 10px; */
+    /* background-color: aquamarine; */
+    right: 0%;
+    padding-left: 10%;
+}
+
+.center-part-2 img{
+    height: 65%;
+    position: absolute;
+
+}
+
+.center-part-1 h1{
+    line-height: 1.1;
+    font-size: 90px;
+    font-family: "SFBold";
+}
+
+.center-part-1 p{
+    text-align: justify;
+    line-height: 1.1;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.center-part-1 button{
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    padding: 27px 40px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+}
+
+.section1bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 120px;
+    background-color: transparent;
+}
+.section1bottom img{
+    height: 60px;
+    zoom: 145%;
+    filter: opacity(0.85);}
+
+.section2 .services{
+    padding: 40px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.services h3{
+    background-color: #BCFF68;
+    font-family: "SFBold";
+    font-weight: 500;
+    padding: 3px 10px ;
+    border-radius: 4px;
+    font-size: 30px;
+}
+
+.services p{
+    width: 40%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container{
+    height: 86%;
+    width: 100%;
+    padding: 40px 120px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    flex-wrap: wrap;
+    gap: 50px 0px;
+}
+
+.elem{
+    flex-shrink: 0;
+    height: 450px;
+    width: 47%;
+    border: 3px solid black;
+    border-radius: 50px;
+    /* background-color: red; */
+    padding: 60px;
+    box-shadow: 0px 20px 0px black;
+    display: flex;
+    
+}
+
+
+.elem-part1{
+    height: 100%;
+    width: 58%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.elem-part2{
+    height: 100%;
+    width: 50px;
+}
+
+.elem-part2 img{
+    height: 100%;
+    width: 570%;
+}
+
+.elem-part1 h2{
+    font-size: 32px;
+    width: 70%;
+    padding: 8px;
+    border-radius: 10px;
+    font-family: "SFBold";
+    background: #BCFF68;
+}
+
+.elem-part1 h4{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    /* font-weight: 500; */
+    gap: 10px;
+}
+
+.elem-part1 h4 i {
+    padding: 10px;
+    background-color: black;
+    color: #BCFF68;
+    border-radius: 50%;
+    font-weight: 900;
+}
+
+.black{
+    background-color: black;
+}
+
+.elem.black.line1 .elem-part1 h4{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    /* font-weight: 500; */
+    gap: 10px;
+}
+
+.elem.black.line1 .elem-part1 h4 i{
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    font-weight: 900;
+}
+
+
+.elem.black.line1 .elem-part1 h2{
+
+    font-size: 32px;
+    width: 70%;
+    padding: 8px;
+    border-radius: 10px;
+    font-family: "SFBold";
+    background: #fff;
+
+}
+
+.elem.black.line2 .elem-part1 h4{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    /* font-weight: 500; */
+    gap: 10px;
+}
+
+.elem.black.line2 .elem-part1 h4 i{
+    padding: 10px;
+    background-color: #fff;
+    color: black;
+    border-radius: 50%;
+    font-weight: 900;
+}
+
+.elem.black.line2 .elem-part1 h2{
+
+    font-size: 32px;
+    width: 70%;
+    padding: 8px;
+    border-radius: 10px;
+    font-family: "SFBold";
+    background: #fff;
+
+}
+
+/* #cursor {
+    height: 30px;
+    width: 30px;
+    background-color: #BCFF68;
+    border-radius: 50%;
+    position: fixed;
+    font-size: 5px;
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    text-align: center;  
+    z-index: 9999;  
+}
+
+.section2 * {
+    z-index: 9998;
+} */
+
+.projects-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.projects-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-item h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.project-item p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+.custom-link {
+    color: black;
+    text-decoration: none;
+}
+.custom-link:hover {
+    color: black; /* Keeps the color black even on hover */
+    text-decoration: none; /* Ensures no underline on hover */
+}
+
+.custom-link2 {
+    color: white;
+    text-decoration: none;
+}
+.custom-link2:hover {
+    color: white; /* Keeps the color black even on hover */
+    text-decoration: none; /* Ensures no underline on hover */
+}
+/* Base styles for larger screens (laptop/desktop) remain as they are */
+
+/* Media Query for Tablets (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .part2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .center {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .center-part-1, .center-part-2 {
+        width: 100%;
+    }
+
+    .center-part-1 h1 {
+        font-size: 60px;
+    }
+
+    .center-part-1 p {
+        font-size: 20px;
+    }
+
+    .section1bottom img {
+        height: 40px;
+        zoom: 120%;
+    }
+
+    .section2 .services p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .elem {
+        width: 100%;
+        height: auto;
+    }
+
+    .elem-part1 h2 {
+        font-size: 25px;
+    }
+
+    .elem-part1 h4 {
+        font-size: 18px;
+    }
+}
+
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav h1 {
+        font-size: 35px;
+    }
+
+    .part2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .center {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .center-part-1 h1 {
+        font-size: 40px;
+    }
+
+    .center-part-1 p {
+        font-size: 16px;
+    }
+
+    .center-part-1 button {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+
+    .center-part-2 img {
+        height: auto;
+        width: 80%;
+        position: static;
+    }
+
+    .section1bottom img {
+        height: 30px;
+        zoom: 110%;
+    }
+
+    .section2 .services p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .elem {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .elem-part1 h2 {
+        font-size: 20px;
+    }
+
+    .elem-part1 h4 {
+        font-size: 16px;
+    }
+}
+.left-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Ensures everything is left-aligned */
+}
+
+.social-icons {
+    margin-top: 40px; /* Adds some space between the name and the icons */
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #000; /* Keeps all icons black */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #000; /* Keeps the hover color black as well */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+/* Base styles for larger screens (laptop/desktop) remain as they are */
+
+/* Media Query for Tablets (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .part2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .center {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .center-part-1, .center-part-2 {
+        width: 100%;
+    }
+
+    .center-part-1 h1 {
+        font-size: 60px;
+    }
+
+    .center-part-1 p {
+        font-size: 20px;
+    }
+
+    .section1bottom img {
+        height: 40px;
+        zoom: 120%;
+    }
+
+    .section2 .services p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .elem {
+        width: 100%;
+        height: auto;
+    }
+
+    .elem-part1 h2 {
+        font-size: 25px;
+    }
+
+    .elem-part1 h4 {
+        font-size: 18px;
+    }
+}
+
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav h1 {
+        font-size: 35px;
+    }
+
+    .part2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .center {
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .center-part-1 h1 {
+        font-size: 40px;
+    }
+
+    .center-part-1 p {
+        font-size: 16px;
+    }
+
+    .center-part-1 button {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+
+    .center-part-2 img {
+        height: auto;
+        width: 80%;
+        position: static;
+    }
+
+    .section1bottom img {
+        height: 30px;
+        zoom: 110%;
+    }
+
+    .section2 .services p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .elem {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .elem-part1 h2 {
+        font-size: 20px;
+    }
+
+    .elem-part1 h4 {
+        font-size: 16px;
+    }
+}
+#contact {
+    text-align: center;
+    padding: 50px 0;
+    background-color: white;
+    font-family: "SFBold";
+}
+
+#contact .services h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "SFBold";
+}
+
+#contact .services p {
+    font-size: 1.2rem;
+    color: black;
+    font-family: "SFBold";
+}
+
+
+.experience-container {
+    width: 1142px;
+    margin: 0 auto;
+  }
+  
+  .experience-box {
+    display: flex;
+    align-items: stretch; /* Ensures all cards have the same height */
+    flex-wrap: wrap;
+    padding: 50px 0;
+  }
+  
+  .experience-item {
+    flex-basis: calc(33.33333% - 30px);
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .experience-item-link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+    overflow: hidden;
+    position: relative;
+    height: 100%; /* Ensures the card fills the parent height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .experience-item-link:hover,
+  .experience-item-link:hover .experience-item-date {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .experience-item-link:hover .experience-item-bg {
+    transform: scale(10);
+  }
+  
+  .experience-item-title {
+    min-height: 87px;
+    margin: 0 0 25px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFF;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .experience-item-date-box {
+    font-size: 18px;
+    color: #FFF;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .experience-item-date {
+    font-weight: bold;
+    color: #BCFF68;
+    transition: color .5s ease;
+  }
+  
+  .experience-item-bg {
+    height: 128px;
+    width: 128px;
+    background-color: #BCFF68;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    transition: all .5s ease;
+  }
+  
+  .experience-item:nth-child(2n) .experience-item-bg {
+    background-color: #BCFF68;
+  }
+  
+  .experience-item:nth-child(3n) .experience-item-bg {
+    background-color: #BCFF68;
+  }
+  
+  .experience-item:nth-child(4n) .experience-item-bg {
+    background-color: #BCFF68;
+  }
+  
+  .experience-item:nth-child(5n) .experience-item-bg {
+    background-color: #BCFF68;
+  }
+  
+  .experience-item:nth-child(6n) .experience-item-bg {
+    background-color: #BCFF68;
+  }
+  
+  @media only screen and (max-width: 979px) {
+    .experience-item {
+      flex-basis: calc(50% - 30px);
+    }
+    .experience-item-title {
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .experience-container {
+      width: 96%;
+    }
+  }
+  
+  @media only screen and (max-width: 639px) {
+    .experience-item {
+      flex-basis: 100%;
+    }
+    .experience-item-title {
+      min-height: 72px;
+      font-size: 24px;
+    }
+    .experience-item-link {
+      padding: 22px 40px;
+    }
+    .experience-item-date-box {
+      font-size: 16px;
+    }
+  }
+  
