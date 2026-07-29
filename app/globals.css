@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+@custom-variant light (&:where(.light, .light *));
+
+@theme inline {
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", monospace;
+
+  --color-bg: var(--bg);
+  --color-fg: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+}
+
+:root {
+  color-scheme: dark;
+
+  --bg: #0e1116;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --border: #2a3038;
+  --accent: #3fb950;
+}
+
+.light {
+  color-scheme: light;
+
+  --bg: #fafaf8;
+  --text: #1a1f24;
+  --muted: #57606a;
+  --border: #e2e2da;
+  --accent: #1a7f37;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+::selection {
+  background: rgba(63, 185, 80, 0.25);
+}
+
+/* Theme-dependent brand mark / icons: dark variant shows by default,
+   light variant only under .light. */
+.only-light {
+  display: none;
+}
+.light .only-light {
+  display: block;
+}
+.light .only-dark {
+  display: none;
+}
